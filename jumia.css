@@ -1,0 +1,288 @@
+body{
+    
+    background-color: whitesmoke;
+    
+}
+#photo{
+    background-image: url(/image/topmenu.png);
+        width: 100%;
+    height: 50px;
+}
+#menu1{
+      display: flex;
+}
+          .lien{
+            list-style-type: none;
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            margin: 0 auto;
+          }
+          ul a{
+            display: flex;
+            text-decoration: none;
+        }
+         li a{
+            margin-left: 15px;
+            font-size: 70%;
+        }
+         ul li a:hover{
+            color:#f68b1e;
+         }
+         ul li a p{
+            
+        margin-left: -250px;
+         }
+         ul span{
+            display: flex;
+            margin-right: 200px;
+         }
+         ul{
+            justify-content: space-between;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+         }
+         .vdn{
+            color: #f68b1e;
+            
+         }
+         .fd{
+            color: #f68b1e;
+            font-style: inherit;
+         }
+         .dd{
+            color: #0000ff;
+
+         }
+#menu2{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+
+    
+}
+.recherche{
+    
+    margin-left: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+#search{
+    position: absolute;
+    left: 5px;
+    font-size: 10px;
+}
+.sub1{
+    margin: 5px;
+}
+.sub0{
+    width: 250px;
+    padding-left: 21px;
+}
+#sub{
+    width: 90px;
+    background-color: orange;
+    border: #f68b1e;
+    color: white;
+}
+.section{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  
+    
+}
+.droite{
+   
+    width: 150px;
+  background-color: white;
+  height: 280px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 100px;
+  }
+
+.container{
+    
+    width: 450px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+ /* Slideshow container */
+ .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+   
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 5px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    z-index: 100;
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: absolute;
+    
+    
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+   
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    
+  }
+.gauche{
+    
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    margin-top: 10px;
+       }
+.gauche1{
+    width: 190px;
+    height: 400px;
+    background-color: white;
+    font-size: 70%;
+
+    border-radius: 2px;
+    
+}
+.gauche2{
+    width: 190px;
+    height: 400px;
+    background-image: url(image/gift.gif);
+    margin-top: 10px;
+    border-radius: 2px;
+    }
+
+.class A {
+    list-style-type: none; 
+    text-decoration: none; 
+ font-size: 70%;  
+
+
+}
+ a:hover{
+    color:#f68b1e; 
+    list-style-type: none;   
+}
+.section2{
+    width: 100%;
+    height: 100px;
+}
+ .gauche1 a{
+    
+     font-size: 90%;
+     list-style-type: none;
+     text-decoration: none;
+     
+    }
+    
+
+
+footer{
+    width: 79%;
+    background-color: white;
+    margin-top: 20px;
+   
+    margin: 10px auto;
+ }
+
+#footer{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+  
+ } 
+  ::-webkit-scrollbar{
+    display: none;
+ }
+ footer img{
+    height: 110px;
+    margin: 0 auto;
+ }
+ .slide-container{
+ /*    overflow: auto; */
+    white-space: nowrap;
+    overflow-x: scroll;
+ }
+ .footer1{
+    display: none;
+ }
+ .arraw2,.arraw1{
+    background-color: transparent;
+    border: none;
+    max-height: 50px;
+    margin: auto 0;
+ }
+ .arraw2:hover,.arraw1:hover{
+    cursor: pointer;
+ }

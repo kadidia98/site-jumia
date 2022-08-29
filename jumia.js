@@ -1,6 +1,5 @@
 let slideIndex = 0;
 showSlides();
-
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -18,7 +17,7 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
-/* footer slide */
+/* pied de page slide */
 const arraw1 = document.querySelector(".arraw1");
 const arraw2 = document.querySelector(".arraw2");
 arraw1.disabled = true;

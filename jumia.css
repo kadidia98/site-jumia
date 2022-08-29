@@ -8,6 +8,7 @@ body{
         width: 100%;
     height: 50px;
 }
+/* réglage du menu1 et du menu2 de header*/
 #menu1{
       display: flex;
 }
@@ -91,14 +92,41 @@ body{
     border: #f68b1e;
     color: white;
 }
-.section{
+.barr a {
+  display: block;
+
+}
+#compt{
+  border: 0px;
+width: 90px;
+background-color: white;
+}
+#compt:hover{
+  color: #f68b1e;
+}
+#help{
+  border: 0px;
+  width: 45px;
+  background-color: white;
+}
+#help:hover{
+  color: #f68b1e;
+}
+
+@media  only screen and(max-width: 620px)  {                  /*le responsive*/
+  .droite, .gauche, .container{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+.section{                                                     /*la  grande section du milieu*/
     width: 100%;
     height: 300px;
     display: flex;
     justify-content: center;
     justify-content: space-around;
   
-    
 }
 .droite{
    
@@ -120,7 +148,7 @@ body{
 }
 
 
- /* Slideshow container */
+ /*le contenu du slideshow*/
  .slideshow-container {
     max-width: 1000px;
     position: relative;
@@ -128,13 +156,13 @@ body{
     
   }
   
-  /* Hide the images by default */
+  /* masquer l'image par defaut */
   .mySlides {
     display: none;
    
   }
   
-  /* Next & previous buttons */
+  /*boutton avance et arrière*/
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -151,19 +179,19 @@ body{
     
   }
   
-  /* Position the "next button" to the right */
+  /* position du boutton suivant à droite*/
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
     
   }
   
-  /* On hover, add a black background color with a little bit see-through */
+  /* ajout d'un couleur de fond noir avec un peu de transparence */
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
   
-  /* The dots/bullets/indicators */
+  /* les points du slider*/
   .dot {
     cursor: pointer;
     z-index: 100;
@@ -196,7 +224,7 @@ body{
     to {opacity: 1}
     
   }
-.gauche{
+.gauche{                               /*réglage du contenu situer à droite*/
     
     width: 190px;
     display: flex;
@@ -251,33 +279,34 @@ body{
 footer{
     width: 79%;
     background-color: white;
-    margin-top: 20px;
-   
-    margin: 10px auto;
+    margin: 0 auto;
  }
 
-#footer{
+#footer{                            /*réglage du footer*/
     display: flex;
     flex-wrap: nowrap;
-    gap: 10px;
-  
+    gap: 5px;
+    max-width: 100%;
  } 
-  ::-webkit-scrollbar{
+ 
+  ::-webkit-scrollbar{               /*pour enlever le scroll*/
     display: none;
  }
  footer img{
-    height: 110px;
+    height: 80px;
     margin: 0 auto;
  }
  .slide-container{
- /*    overflow: auto; */
+ /*    reglage des debordements */
     white-space: nowrap;
     overflow-x: scroll;
+
  }
  .footer1{
     display: none;
  }
  .arraw2,.arraw1{
+  /* réglage des bouttons*/
     background-color: transparent;
     border: none;
     max-height: 50px;

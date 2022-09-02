@@ -1,3 +1,7 @@
+*{
+  list-style-type: none; 
+  text-decoration: none; 
+}
 body{
     
     background-color: whitesmoke;
@@ -13,15 +17,16 @@ body{
       display: flex;
 }
           .lien{
-            list-style-type: none;
+            
             display: flex;
             width: 50%;
             justify-content: space-between;
             margin: 0 auto;
+            
           }
           ul a{
             display: flex;
-            text-decoration: none;
+            
         }
          li a{
             margin-left: 15px;
@@ -34,7 +39,7 @@ body{
             
         margin-left: -250px;
          }
-         ul span{
+         .lien span{
             display: flex;
             margin-right: 200px;
          }
@@ -44,7 +49,7 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            list-style-type: none;
+        
          }
          .vdn{
             color: #f68b1e;
@@ -54,7 +59,7 @@ body{
             color: #f68b1e;
             font-style: inherit;
          }
-         .dd{
+         .dd:hover{
             color: #0000ff;
 
          }
@@ -113,13 +118,7 @@ background-color: white;
   color: #f68b1e;
 }
 
-@media  only screen and(max-width: 620px)  {                  /*le responsive*/
-  .droite, .gauche, .container{
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-  }
-}
+
 .section{                                                     /*la  grande section du milieu*/
     width: 100%;
     height: 300px;
@@ -136,12 +135,13 @@ background-color: white;
   border-radius: 5px;
   margin-top: 10px;
   margin-left: 100px;
+  font-size: 70%; 
   }
 
 .container{
     
     width: 450px;
-    background-color: white;
+    
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -194,7 +194,7 @@ background-color: white;
   /* les points du slider*/
   .dot {
     cursor: pointer;
-    z-index: 100;
+   
     height: 5px;
     width: 5px;
     margin: 0 2px;
@@ -202,7 +202,7 @@ background-color: white;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-    position: absolute;
+    
     
     
   }
@@ -233,7 +233,8 @@ background-color: white;
     margin-bottom: 10px;
     margin-right: 100px;
     margin-top: 10px;
-       }
+       
+  }
 .gauche1{
     width: 190px;
     height: 400px;
@@ -251,32 +252,22 @@ background-color: white;
     border-radius: 2px;
     }
 
-.class A {
-    list-style-type: none; 
-    text-decoration: none; 
- font-size: 70%;  
 
-
-}
  a:hover{
     color:#f68b1e; 
-    list-style-type: none;   
+    
 }
 .section2{
     width: 100%;
     height: 100px;
 }
  .gauche1 a{
-    
-     font-size: 90%;
-     list-style-type: none;
-     text-decoration: none;
-     
-    }
+    font-size: 90%;
+  }
     
 
 
-footer{
+.foot{
     width: 79%;
     background-color: white;
     margin: 0 auto;
@@ -315,3 +306,48 @@ footer{
  .arraw2:hover,.arraw1:hover{
     cursor: pointer;
  }
+ /*responsive*/
+@media (max-width: 650px){
+  #menu1{
+    display: none;
+  }
+  #photo{
+    width: 100%;
+  }
+  .droite{
+    width: 270px;
+    margin-left: 10px;
+  }
+  .recherche{
+    display: none;
+  }
+  .section{
+    
+    flex-direction: column; 
+     margin-top: 300px;
+    padding: 10px;
+     
+  }
+  
+ .slideshow-container{
+    width: 60%;
+    height: 283px;
+    margin-left: 10px;
+ }
+ 
+  #footer{
+    margin-top: 265px;
+  }
+  .foot{
+     margin-left: 10px;
+     width: 360px;
+  }
+  .gauche{
+    margin-left: 10px;
+    
+  }
+  
+ 
+
+
+} 

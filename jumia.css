@@ -312,27 +312,30 @@ background-color: white;
     display: none;
   }
   #photo{
-    width: 100%;
+    width: 590px;
+    
   }
-  .droite{
-    width: 270px;
-    margin-left: 10px;
-  }
+ 
   .recherche{
     display: none;
   }
   .section{
     
-    flex-direction: column; 
-     margin-top: 300px;
+   position: relative;
+    display: block;
     padding: 10px;
      
   }
+  .droite{
+   
+    display: none;
+  }
   
  .slideshow-container{
-    width: 60%;
+    width: 92%;
     height: 283px;
     margin-left: 10px;
+    position: absolute;
  }
  
   #footer{
@@ -344,7 +347,17 @@ background-color: white;
   }
   .gauche{
     margin-left: 10px;
-    
+    position: absolute;
+    margin-top: 300px;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+  }
+  .gauche1, .gauche2{
+    height: 200px;
+  }
+  .gauche2{
+     margin-top: 0px;
   }
   
  

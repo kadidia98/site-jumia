@@ -1,16 +1,32 @@
+
+*{
+  text-decoration: none;
+}
+
 body{
     
-    background-color: whitesmoke;
+    background-color:whitesmoke; 
+    width: 90%;
+   height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
     
 }
-#photo{
-    background-image: url(/image/topmenu.png);
-        width: 100%;
-    height: 50px;
+
+.limite{
+  width: 1250px;
+  height: 700px;
+ margin-left: 150px;
+  background-color:whitesmoke; 
 }
+
 /* réglage du menu1 et du menu2 de header*/
-#menu1{
+.menu1{
       display: flex;
+     height: 30px;
+     width: 100%;
 }
           .lien{
             list-style-type: none;
@@ -18,52 +34,43 @@ body{
             width: 50%;
             justify-content: space-between;
             margin: 0 auto;
+            align-items: center;
+           
           }
           ul a{
             display: flex;
-            text-decoration: none;
+           
         }
          li a{
             margin-left: 15px;
             font-size: 70%;
-        }
-         ul li a:hover{
-            color:#f68b1e;
-         }
-         ul li a p{
-            
-        margin-left: -250px;
-         }
-         ul span{
+        } 
+        
+        
+         .lien span{
             display: flex;
             margin-right: 200px;
          }
-         ul{
-            justify-content: space-between;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style-type: none;
-         }
-         .vdn{
+        
+         .vdn {
             color: #f68b1e;
+            margin-left: -250px;
             
          }
          .fd{
             color: #f68b1e;
             font-style: inherit;
          }
-         .dd{
+         .dd:hover{
             color: #0000ff;
 
          }
-#menu2{
+.menu2{
     display: flex;
     background-color: white;
-    width: 100%;
+    width: 1250px;
     justify-content: space-between;
-
+    height: 60px;
     
 }
 .recherche{
@@ -92,13 +99,22 @@ body{
     border: #f68b1e;
     color: white;
 }
-.barr a {
-  display: block;
+.barr  {
+  justify-content: space-between;
+  /* display: block; */
+ /*  margin: 0 auto; */
+  display: flex;
+   /* justify-content: center;  */
+  align-items: center;
+  list-style-type: none;
+  gap: 2px;
+  
 
 }
 #compt{
   border: 0px;
 width: 90px;
+font-size: 10px;
 background-color: white;
 }
 #compt:hover{
@@ -107,59 +123,49 @@ background-color: white;
 #help{
   border: 0px;
   width: 45px;
+  font-size: 10px;
   background-color: white;
 }
 #help:hover{
   color: #f68b1e;
 }
-
-@media  only screen and(max-width: 620px)  {                  /*le responsive*/
-  .droite, .gauche, .container{
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-  }
-}
+  
 .section{                                                     /*la  grande section du milieu*/
-    width: 100%;
-    height: 300px;
+    
     display: flex;
     justify-content: center;
-    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
   
+  gap: 10px;
+  align-items: center;
 }
 .droite{
-   
-    width: 150px;
-  background-color: white;
-  height: 280px;
+      
   border-radius: 5px;
-  margin-top: 10px;
-  margin-left: 100px;
+  background-color: white;
+  height: 420px;
+  width: 280px;
   }
-
-.container{
-    
-    width: 450px;
-    background-color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
+  .txt{font-size: 15px;}
 
 
- /*le contenu du slideshow*/
- .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    
-  }
   
   /* masquer l'image par defaut */
-  .mySlides {
-    display: none;
+  .container{
    
+    width: 670px;
+    height: 420px;
+    position: relative;
+    border-radius: 5px;
+    
+  }
+ 
+  .image{
+    width: 670px;
+    height: 420px;
+  position: absolute;
+   border-radius: 5px;
   }
   
   /*boutton avance et arrière*/
@@ -194,7 +200,7 @@ background-color: white;
   /* les points du slider*/
   .dot {
     cursor: pointer;
-    z-index: 100;
+    
     height: 5px;
     width: 5px;
     margin: 0 2px;
@@ -202,7 +208,7 @@ background-color: white;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-    position: absolute;
+    
     
     
   }
@@ -224,40 +230,34 @@ background-color: white;
     to {opacity: 1}
     
   }
-.gauche{                               /*réglage du contenu situer à droite*/
+ .gauche{                                /*réglage du contenu situer à droite*/
     
-    width: 190px;
-    display: flex;
-    flex-direction: column;
-    height: 280px;
-    margin-bottom: 10px;
-    margin-right: 100px;
-    margin-top: 10px;
-       }
+     width: 280px;
+  
+    column-gap: 10px;
+    height: 420px;
+    
+   
+  } 
 .gauche1{
-    width: 190px;
-    height: 400px;
+    width: 280px;
+     height: 205px;
     background-color: white;
     font-size: 70%;
 
-    border-radius: 2px;
+    border-radius: 5px;
     
 }
 .gauche2{
-    width: 190px;
-    height: 400px;
-    background-image: url(image/gift.gif);
-    margin-top: 10px;
-    border-radius: 2px;
+    width: 280px;
+    height: 205px;
+    margin-top: 10px; 
+    border-radius: 5px;
+
+    
     }
 
-.class A {
-    list-style-type: none; 
-    text-decoration: none; 
- font-size: 70%;  
 
-
-}
  a:hover{
     color:#f68b1e; 
     list-style-type: none;   
@@ -266,44 +266,42 @@ background-color: white;
     width: 100%;
     height: 100px;
 }
- .gauche1 a{
-    
-     font-size: 90%;
-     list-style-type: none;
-     text-decoration: none;
-     
-    }
+ 
     
 
 
 footer{
-    width: 79%;
+    width: 1250px;
+    height: 110px;
     background-color: white;
     margin: 0 auto;
+    
  }
 
 #footer{                            /*réglage du footer*/
     display: flex;
     flex-wrap: nowrap;
-    gap: 5px;
-    max-width: 100%;
+    gap: 2px;
+    
  } 
  
   ::-webkit-scrollbar{               /*pour enlever le scroll*/
     display: none;
  }
  footer img{
-    height: 80px;
+    height: 110px;
     margin: 0 auto;
  }
  .slide-container{
  /*    reglage des debordements */
-    white-space: nowrap;
+     white-space: nowrap; 
     overflow-x: scroll;
+   
 
  }
  .footer1{
     display: none;
+
  }
  .arraw2,.arraw1{
   /* réglage des bouttons*/
@@ -315,3 +313,33 @@ footer{
  .arraw2:hover,.arraw1:hover{
     cursor: pointer;
  }
+
+  /*responsive*/
+@media (max-width:650px){
+  .section{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+ .droite{
+  width: 294px;
+  margin-right: 20px;
+ }
+ .menu1{
+  display: none;
+ }
+ .recherche{
+  display: none;
+ }
+ .menu2{
+    display: none;
+ }
+ .image{
+  width: 334px;
+  margin-left: 133px;
+
+}
+  }

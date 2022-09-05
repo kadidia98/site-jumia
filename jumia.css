@@ -10,7 +10,7 @@ body{
    height: 100%;
    margin: 0;
     
-    background-image:   url(image/br.jpg);
+    background-image: url(image/br.jpg);
     display: flex;
     justify-content: center;
     
@@ -19,8 +19,8 @@ body{
 .limite{
   width: 1250px;
   height: 700px;
- 
-  background-color:rgb(240, 234, 234); 
+  margin-left: 150px;
+  background-color: whitesmoke; 
 }
 
 /* réglage du menu1 et du menu2 de header*/
@@ -45,6 +45,8 @@ body{
          li a{
             margin-left: 15px;
             font-size: 70%;
+            display: flex;
+            align-items: center;
         } 
         
         
@@ -106,10 +108,9 @@ body{
 }
 .barr  {
   justify-content: space-between;
-  /* display: block; */
- /*  margin: 0 auto; */
+ 
   display: flex;
-   /* justify-content: center;  */
+   width: auto;
   align-items: center;
   list-style-type: none;
   gap: 2px;
@@ -118,23 +119,31 @@ body{
 }
 #compt{
   border: 0px;
-width: 90px;
-font-size: 10px;
+width: 142px;
+font-size: 20px;
 background-color: white;
+}
+.barr li{
+  display: flex;
+  width: auto;
+  align-items: center;
 }
 #compt:hover{
   color: #f68b1e;
 }
 #help{
   border: 0px;
-  width: 45px;
-  font-size: 10px;
+  width: 67px;
+  font-size: 20px;
   background-color: white;
 }
 #help:hover{
   color: #f68b1e;
 }
-  
+  .panier{
+    width: 67px;
+  font-size: 20px;
+  }
 .section{                                                     /*la  grande section du milieu*/
     
     display: flex;
@@ -152,8 +161,11 @@ background-color: white;
   height: 420px;
   width: 280px;
   }
-  .txt{font-size: 15px;}
-
+  .txt{font-size: 20px;}
+.droite a{
+  line-height: 40px;
+  margin-left: 20px;
+}
 
   
   /* masquer l'image par defaut */
@@ -246,19 +258,17 @@ background-color: white;
     width: 280px;
      height: 205px;
     background-color: white;
-    font-size: 70%;
+    font-size: 15px;
 
     border-radius: 5px;
     
 }
+.gauche1 a{
+margin-left: 20px;
+}
 .gauche2{
-    
-    
-    margin-top: 10px; 
-    border-radius: 10px;
-
-    
-    }
+   margin-top: 10px; 
+}
 
 
  a:hover{
@@ -291,7 +301,7 @@ footer{
   ::-webkit-scrollbar{               /*pour enlever le scroll*/
     display: none;
  }
- footer img{
+ .slide-container img{
     height: 110px;
     margin: 0 auto;
  }
@@ -318,7 +328,7 @@ footer{
  }
 
   /*responsive*/
-@media (max-width:1000px){
+@media (max-width:650px){
   .section{
     
     display: flex;
@@ -328,8 +338,19 @@ footer{
 
   }
  .droite{
-  width: 294px;
-  margin-right: 20px;
+  width: 385px;
+  margin-right: 102px;
+ }
+ .gauche{
+  
+  width: 385px;
+  margin-right: 102px;
+ }
+ .gauche1{
+   width: 385px;
+ }
+ .gauche2{
+  width: 800px;
  }
  .menu1{
   display: none;
@@ -338,10 +359,10 @@ footer{
   display: none;
  }
  body img{
-  width: 50%;
+  width: 61%;
  }
   .menu2{
-   width: 50%;
+   width: 61%;
  } 
  #compt{
   display: none;
@@ -353,12 +374,19 @@ footer{
   display: none;
  }
  .image{
-  width: 334px;
-  margin-left: 133px;
+  width: 385px;
+  margin-left: 87px;
 
 }
 .photo{
   margin-left: 50px;
 }
 
-  }
+.limite{
+  background-color: none;
+}
+body{
+  background-image: none;
+}
+
+}
